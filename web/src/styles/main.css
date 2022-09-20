@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-style {
+        @apply bg-zinc-900 border-none text-white py-3 px-4 rounded text-sm placeholder:text-zinc-500 focus:outline-none focus:ring focus:ring-violet-300
+    }
+
+    .dialogOverlay {
+        @apply bg-black/90 inset-0 fixed overflow-y-auto flex items-center justify-center px-2 py-4
+    }
+
+    .dialogContent {
+        @apply bg-[#2a2634] py-6 px-6 text-white rounded-lg max-h-max md:max-w-[490px] w-[600px] md:mt-0 mt-[15rem]
+    }
+}
